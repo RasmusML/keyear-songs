@@ -9,6 +9,11 @@ growing) stays out of the application's own.
 songs/*.mid
 ```
 
+**[SONGS.md](SONGS.md) lists what each file is** — title, composer, genre and
+per-track difficulty. The filenames are UUIDs, so that table is the only way
+to tell them apart at a glance; it is generated from the files themselves
+rather than typed, and the app's test suite fails if the two disagree.
+
 ## How the app consumes this
 
 The app pins an exact commit of this repo in its own `assets/songs.pin.json`
@@ -38,8 +43,10 @@ documented in the app repo's README, under Song metadata.
 
 1. Export it from the KeyEar song editor, which writes the metadata block.
 2. Drop the `.mid` into `songs/`.
-3. Commit and push.
-4. Update `assets/songs.pin.json` in the app repo to the new commit, and run
+3. Regenerate the listing from the app repo:
+   `npx tsx scripts/build-songs-md.ts ../keyear-songs`
+4. Commit and push both.
+5. Update `assets/songs.pin.json` in the app repo to the new commit, and run
    `npm run sync-assets`.
 
 ## Provenance and licensing

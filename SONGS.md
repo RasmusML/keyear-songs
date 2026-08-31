@@ -17,6 +17,8 @@ which is what this table is for.
 | `66d08645-450c-4bb3-b605-be4c7d995ed2.mid` | Canon in D | Johann Pachelbel | Classical | 7, 5 |
 | `7a560608-0a6d-4e7c-99cd-bb1bfa765da5.mid` | La Campanella | Franz Liszt | Classical | 3, skip, 3 |
 | `7e130739-d2fc-4456-9128-8e8bdbf4707c.mid` | The House of the Rising Sun | American traditional folk song | — | 6, skip, 4 |
+| `82f372c8-b731-4275-8ddd-a2dc29584b13.mid` | The Entertainer | Scott Joplin | Ragtime | 8, skip, 2 |
+| `e06cdc89-e8c5-490b-9ad0-d8a93f1350cd.mid` | When the Saints Go Marching In | African American traditional folk song | — | 4 |
 | `fdd882ad-ccaf-471e-84a7-f896658010f9.mid` | Für Elise | Ludwig van Beethoven | Classical | 3, 3 |
 
 `skip` marks a track that should not be ear-trained against — an
